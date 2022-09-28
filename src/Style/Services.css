@@ -1,0 +1,54 @@
+.services-container{
+    background-color: #f4feff;
+    width: 100%;
+    height: 100%;
+}
+.main-container{
+    position: relative;
+    z-index: 2;
+}
+.img-container{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    padding: 25px;
+    background-color: #e88cea;
+    margin: 18px auto ;
+    
+}
+.img{
+    background-color: #835ef8;
+}
+
+.main-container::before{
+    background-image: url('../assets/xdot-bg.png.pagespeed.ic.CHsEbhdzpj.webp');
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 80px;
+    height: 135px;
+    right: 105px;
+    top: -30px;
+    transition: 0.5s;
+
+} 
+.card:hover .main-container::before{
+    right: 102px;
+    top: -30px;
+}
+.card{
+    background-color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+    text-align: center;
+    padding: 50px 30px;
+    transition: transform 0.5s ease-in-out;
+    border: 1px solid transparent;
+    
+}
+.card:hover{
+    border: 1px solid #835ef8;
+}
+.card:hover .img-container{
+    background-color: #835ef8;
+}

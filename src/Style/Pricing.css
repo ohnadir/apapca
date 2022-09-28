@@ -1,0 +1,77 @@
+.priceContainer{
+    position: relative;
+    height: 500px;
+}
+.priceOverlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    overflow: hidden;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg,#f9218d 0%,#6c19f6 100%);
+    
+}
+.pricing-container{
+    margin-top: -280px;
+}
+.primary{
+    position: relative;
+    z-index: 2;
+}
+.pricingCard{
+    box-shadow: 0 0 9px 0 rgb(131 93 248 / 7%);
+    background: #fff;
+    padding: 40px 25px;
+    border-radius: 6px;
+    transition: .4s;
+    text-align: center;
+    }
+.primary::before{
+    background-image: url(https://preview.colorlib.com/theme/appco/assets/img/gallery/xcard_dot.png.pagespeed.ic.p3ARBYlPMA.png);
+    content: "";
+    width: 171px;
+    height: 134px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    z-index: -1;
+    transition: .4s;
+}
+.primary:hover::before{
+    right: -20px;
+    bottom: -20px;
+}
+
+
+/* Button Section */
+.btnContainer{
+    position: relative;
+    background-color: #712fda;
+    border-radius: 6px;
+    color: white;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btnHover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    background-color: rgba(238, 43, 153, 0.6);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.primary:hover .btnHover, .primary:hover .cardBtn {
+    width: 100%;
+    color: white;
+  }
+  

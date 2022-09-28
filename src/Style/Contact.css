@@ -1,0 +1,56 @@
+.contactBtn{
+    position: relative;
+    background-color: #f9218d;
+    padding: 15px 55px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+.contactBtn::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    color: white;
+    border-radius: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.contactBtn:hover::before{
+    width: 100%;
+    color: white;
+}
+.contact-container{
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-bottom: 1px solid #ffc9fd;
+}
+.btnImg{
+    position: absolute;
+    left: -150px;
+    bottom: -180px;
+    animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation {
+    100%{
+        rotate:360deg;
+    }
+}
+.btnImg2{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.cHover::before{
+    content: 'Contact Us';
+    position: absolute;
+    top: 30%;
+    color: white;
+}
